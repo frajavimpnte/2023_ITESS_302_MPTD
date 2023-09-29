@@ -20,6 +20,11 @@ public class SimplexMethodTest {
         float r0[] = {0, 1, -3, -6, 9, 0, 1, -2, 0, 0};
         
         sm.add(0, r0);
-        System.out.println("index: " + sm.optimality());
+        System.out.println(sm.optimality());
+        
+        SimplexMethod sm2 = new SimplexMethod(2,2); 
+        float r02[] = {0, 1, 2, 3, 4, 0, 0};
+        sm2.add(0, r02);
+        System.out.println(sm2.optimality());
     }
 }

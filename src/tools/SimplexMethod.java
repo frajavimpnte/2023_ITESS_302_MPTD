@@ -27,7 +27,7 @@ public class SimplexMethod {
     
     public void add(int i, float row[]) {
         for (int k = 0; k < row.length; k++)
-            pl[i][k] = row[i];
+            pl[i][k] = row[k];
     }
     
     public int optimality() {
